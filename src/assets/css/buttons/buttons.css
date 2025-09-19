@@ -1,0 +1,2 @@
+.btn{display:inline-block;padding:.7rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:500;transition:all .18s}
+.btn.primary{background:var(--accent);color:white;box-shadow:0 8px 24px rgba(138,92,255,0.16);max-width: 15rem; text-align: center}

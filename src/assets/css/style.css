@@ -1,0 +1,37 @@
+:root{
+    --max-w: 1100px;
+    --accent: #8a5cff;
+    --bg: #fff;
+    --gray: #434343;
+    --muted: #666;
+    --gap: 1.25rem;
+    --radius: 12px;
+    --border-radius: 8px;
+    --font-family-heading: "Changa One", sans-serif;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+    margin:0;
+    font-family: Roboto, sans-serif;
+    color: var(--gray);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+}
+
+.container{max-width:var(--max-w);margin:0 auto;padding:0 1rem}
+
+h2 {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    margin: 0 0 1rem;
+    line-height: 1.1;
+    font-family: var(--font-family-heading);
+    font-weight:400;
+}
+.eyebrow{
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin: 0 0 1rem;
+}
