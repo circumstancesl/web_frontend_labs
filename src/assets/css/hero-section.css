@@ -1,14 +1,68 @@
-.hero{position:relative;min-height:52vh;display:flex;align-items: center;
+.hero {
+    position: relative;
+    min-height: 52vh;
+    display: flex;
+    align-items: center;
     background-image: url("/src/assets/img/hero-background-image.svg");
-    background-size:cover;background-position:center;padding:4rem 0;border-radius:0 0 var(--radius) var(--radius)}
-.hero-overlay{position:absolute;inset:0}
-.hero-content{width: 100%; padding-right: 30%}
-.hero h1{font-size:clamp(2rem, 4.2vw, 3.2rem);font-family: "Changa One";margin:0 0 .5rem;line-height:1.02}
-.hero h1 span{font-weight:900}
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-content {
+    width: 100%;
+    padding-right: 30%;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 4.2vw, 3.2rem);
+    font-family: "Changa One";
+    margin: 0 0 0.5rem;
+    line-height: 1.02;
+}
+
+.hero h1 span {
+    font-weight: 900;
+}
+
 .hero .hero-content h1 span.text-accent {
     color: var(--accent);
 }
 
-.hero-content .btn.watch{color:var(--gray);display:inline-flex;align-items:center;gap:0.75rem;font-weight:400;text-decoration:none;transition:color 0.2s ease}
-.hero-content .btn.watch .play-icon {width: 40px; height: 40px; border-radius: 50%; background-color: #dcc4ff; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease;}
-.hero-content .btn.watch .play-icon::before {content: '';width: 0;height: 0;border-top: 7px solid transparent;border-bottom: 7px solid transparent;border-left: 12px solid var(--accent);margin-left: 4px;}
+.hero-content .btn.watch {
+    color: var(--gray);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding-left: 1.5rem;
+}
+
+.hero-content .btn.watch .play-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #dcc4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.hero-content .btn.watch .play-icon::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 12px solid var(--accent);
+    margin-left: 4px;
+}
