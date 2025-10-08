@@ -1,13 +1,13 @@
-.btn {
+.button {
     display: inline-block;
     padding: 0.7rem 1.1rem;
     border-radius: 4px;
     text-decoration: none;
     font-weight: 500;
-    transition: all 0.18s;
+    transition: all 0.18s ease;
 }
 
-.btn.primary {
+.button--primary {
     background: var(--accent);
     color: white;
     box-shadow: 0 8px 24px rgba(138, 92, 255, 0.16);
@@ -15,7 +15,7 @@
     text-align: center;
 }
 
-.btn.watch {
+.button--watch {
     color: var(--accent);
     padding-left: 0;
     padding-right: 0;
@@ -24,7 +24,7 @@
     gap: 0.75rem;
 }
 
-.btn.watch .play-icon {
+.button--watch__icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -35,7 +35,7 @@
     transition: transform 0.2s ease;
 }
 
-.btn.watch .play-icon::before {
+.button--watch__icon::before {
     content: '';
     width: 0;
     height: 0;

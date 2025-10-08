@@ -3,21 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <title>lab1</title>
+    <!-- Стили -->
     <link rel="stylesheet" href="src/assets/css/header.css">
     <link rel="stylesheet" href="src/assets/css/style.css">
     <link rel="stylesheet" href="src/assets/css/buttons/buttons.css">
     <link rel="stylesheet" href="src/assets/css/hero-section.css">
     <link rel="stylesheet" href="src/assets/css/featured-destination-section.css">
+    <link rel="stylesheet" href="src/assets/css/discover-the-world.css">
+
+    <!-- Шрифты -->
     <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   </head>
   <body>
   <header class="site-header">
-      <div class="container header-inner">
+      <div class="container site-header__inner">
           <div class="logo">
               <img class="logo-talking" src="src/assets/img/vector-logo-talking.svg" alt="Travel Logo">
               <img class="logo-travel" src="src/assets/img/vector-logo-travel.svg" alt="Travel Logo">
           </div>
-          <nav class="nav">
+          <nav class="site-header__nav">
               <a href="#">Home</a>
               <a href="#">Story</a>
               <a href="#">Gallery</a>
@@ -30,34 +34,88 @@
 
   <main>
       <section class="hero">
-          <div class="hero-overlay"></div>
-          <div class="container hero-content">
-              <h1><span class="text-accent">Let's talk</span> about your next trip!</h1>
-              <p>Share your favorite travel destination and we will feature it in our next blog!</p>
-              <div>
-                  <a class="btn primary" href="#">Share your story</a>
-                  <a class="btn watch" href="#">
-                      <span class="play-icon" aria-hidden="true"></span>
+          <div class="hero__overlay"></div>
+          <div class="container hero__content">
+              <h1 class="hero__title">
+                  <span>Let's talk</span> about your next trip!
+              </h1>
+              <p class="hero__subtitle">
+                  Share your favorite travel destination and we will feature it in our next blog!
+              </p>
+              <div class="hero__actions">
+                  <a href="#" class="button button--primary">Share your story</a>
+                  <a href="#" class="hero__btn--watch">
+                      <span class="hero__icon-play" aria-hidden="true"></span>
                       Watch highlights
                   </a>
               </div>
           </div>
       </section>
 
+
       <section class="featured-destination container">
-          <div class="featured-destination-image-wrapper">
+          <div class="featured-destination__image-wrapper">
               <img src="src/assets/img/featured-image.png" alt="Man.">
           </div>
-          <div class="featured-destination-content">
+          <div class="featured-destination__content">
               <p class="eyebrow">FEATURED DESTINATION</p>
               <h2>Our swiss adventure blog</h2>
-              <p class="featured-destination-description">
+              <p class="featured-destination__description">
                   Visiting the swiss alps? Want to know the requirements on travelling to Switzerland during the pandemic? Our blog might help!
               </p>
-              <a href="#" class="btn watch">
-                  <span class="play-icon" aria-hidden="true"></span>
+              <a href="#" class="button button--watch">
+                  <span class="button--watch__icon" aria-hidden="true"></span>
                   Watch Now
               </a>
+          </div>
+      </section>
+
+      <section class="discover-the-world container">
+          <header class="discover-the-world__header">
+              <p class="eyebrow">JOIN OUR ADVENTURES</p>
+              <h2 class="discover-the-world__title">Discover the world with us</h2>
+          </header>
+
+          <div class="discover-the-world__grid">
+              <div class="destination-card">
+                  <figure>
+                      <img src="src/assets/img/iceland-card-image.png" alt="Исландия">
+                      <figcaption>
+                          <span class="destination-card__title">Iceland</span>
+                          <span class="destination-card__discover">Discover</span>
+                      </figcaption>
+                  </figure>
+              </div>
+
+              <div class="destination-card">
+                  <figure>
+                      <img src="src/assets/img/italy-card-image.png" alt="Италия">
+                      <figcaption>
+                          <span class="destination-card__title">Italy</span>
+                          <span class="destination-card__discover">Discover</span>
+                      </figcaption>
+                  </figure>
+              </div>
+
+              <div class="destination-card">
+                  <figure>
+                      <img src="src/assets/img/dubai-card-image.png" alt="Дубай.">
+                      <figcaption>
+                          <span class="destination-card__title">Dubai</span>
+                          <span class="destination-card__discover">Discover</span>
+                      </figcaption>
+                  </figure>
+              </div>
+
+              <div class="destination-card">
+                  <figure>
+                      <img src="src/assets/img/patagonia-card-image.png" alt="Патагония">
+                      <figcaption>
+                          <span class="destination-card__title">Patagonia</span>
+                          <span class="destination-card__discover">Discover</span>
+                      </figcaption>
+                  </figure>
+              </div>
           </div>
       </section>
   </main>

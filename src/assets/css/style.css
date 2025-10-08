@@ -1,34 +1,54 @@
-:root{
+:root {
+    /* Layout */
     --max-w: 1100px;
+    --gap: 1.25rem;
+    --radius: 12px;
+    --border-radius: 8px;
+
+    /* Цвета */
     --accent: #8a5cff;
     --bg: #fff;
     --gray: #434343;
     --muted: #666;
-    --gap: 1.25rem;
-    --radius: 12px;
-    --border-radius: 8px;
+
+    /* Шрифты */
+    --font-family-base: "Plus Jakarta Sans", sans-serif;
     --font-family-heading: "Changa One", sans-serif;
 }
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-    margin:0;
-    font-family: Roboto, sans-serif;
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-base);
     color: var(--gray);
-    background: var(--bg);
+    background-color: var(--bg);
     -webkit-font-smoothing: antialiased;
 }
 
-.container{max-width:var(--max-w);margin:0 auto;padding:0 1rem}
+.container {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
 
 h2 {
     font-size: clamp(1.5rem, 3.5vw, 2rem);
     margin: 0 0 1rem;
     line-height: 1.1;
     font-family: var(--font-family-heading);
-    font-weight:400;
+    font-weight: 400;
 }
-.eyebrow{
+
+.eyebrow {
     color: var(--accent);
     font-weight: 700;
     font-size: 0.875rem;
