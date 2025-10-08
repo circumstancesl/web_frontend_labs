@@ -1,6 +1,5 @@
 .discover-the-world {
     text-align: center;
-    padding-bottom: var(--padding-section);
 }
 
 .discover-the-world__header {
@@ -8,8 +7,7 @@
 }
 
 .discover-the-world__title {
-    font-family: var(--font-family-heading);
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .discover-the-world__grid {
