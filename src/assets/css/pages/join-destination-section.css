@@ -1,7 +1,7 @@
 .join-destination-section {
     display: flex;
     text-align: center;
-    background-image: url("../img/join-destination-section-background-image.png");
+    background-image: url("../../img/join-destination-section-background-image.png");
     background-size: cover;
     background-position: center;
     flex-direction: column;
@@ -39,7 +39,7 @@
 
 .join-destination-form select {
     appearance: none;
-    background-image: url("../img/vector-array.svg");
+    background-image: url("../../img/vector-array.svg");
     background-repeat: no-repeat;
     background-position: right 0.75rem center;
     background-size: 1rem;
