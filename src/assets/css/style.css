@@ -60,3 +60,8 @@ h3 {
     text-transform: uppercase;
     margin: 0 0 1rem;
 }
+.small-italic-text {
+    font-style: italic;
+    color: gray;
+    font-size: .8rem;
+}
