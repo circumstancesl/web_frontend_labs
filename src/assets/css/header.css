@@ -24,7 +24,7 @@
     font-weight: 500;
 }
 
-.site-header__nav a:first-child {
+.site-header__nav a.active {
     color: var(--accent);
 }
 
