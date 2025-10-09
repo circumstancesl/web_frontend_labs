@@ -11,6 +11,7 @@
       <link rel="stylesheet" href="src/assets/css/featured-destination-section.css">
       <link rel="stylesheet" href="src/assets/css/discover-the-world.css">
       <link rel="stylesheet" href="src/assets/css/footer.css">
+      <link rel="stylesheet" href="src/assets/css/join-destination-section.css">
 
     <!-- Шрифты -->
       <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
@@ -119,6 +120,52 @@
               </div>
           </div>
       </section>
+
+      <section class="join-destination-section">
+          <header class="join-destination-section__header">
+              <p class="eyebrow">Let’s build a community</p>
+              <h2>Join our next destination</h2>
+          </header>
+          <form class="join-destination-form container" action="#" method="post">
+              <h3>Share your travels</h3>
+              <p>Suggest a new travel destination that you want to see and we will feature it in our blog.</p>
+              <input
+                      type="text"
+                      id="destination-name"
+                      name="destination-name"
+                      placeholder="Destination name"
+                      required
+              >
+              <select id="destination-country" name="destination-country" required>
+                  <option value="" disabled selected>Country of Destination</option>
+                  <option value="iceland">Iceland</option>
+                  <option value="italy">Italy</option>
+                  <option value="dubai">Dubai</option>
+                  <option value="patagonia">Patagonia</option>
+              </select>
+              <input
+                      type="text"
+                      id="your-name"
+                      name="your-name"
+                      placeholder="Your name"
+                      required
+              >
+              <select id="shooting-category" name="shooting-category" required>
+                  <option value="" disabled selected>Shooting category</option>
+                  <option value="landscape">Landscape</option>
+                  <option value="urban">Urban</option>
+                  <option value="portrait">Portrait</option>
+                  <option value="wildlife">Wildlife</option>
+              </select>
+              <textarea
+                      id="description"
+                      name="description"
+                      placeholder="Describe what kind of photos you want to focus on"
+              ></textarea>
+              <a href="#" class="button button--primary">Submit</a
+          </form>
+      </section>
+
   </main>
   <footer class="site-footer">
       <div class="container site-footer__inner">

@@ -1,0 +1,50 @@
+.join-destination-section {
+    display: flex;
+    text-align: center;
+    background-image: url("../img/join-destination-section-background-image.png");
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 85vh;
+    padding: clamp(3rem, 6vw, 6rem) 0;
+}
+
+.join-destination-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: var(--max-w);
+    padding: 32px;
+    background-color: white;
+    box-shadow: 0 12px 20px rgba(0,0,0,0.05);
+    gap: 0.3rem;
+    justify-content: center;
+}
+
+.join-destination-form input,
+.join-destination-form select,
+.join-destination-form textarea {
+    width: 100%;
+    padding: 16px;
+    font-size: 1rem;
+    font-family: var(--font-family-base);
+    color: var(--gray);
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    background-color: var(--bg);
+    outline: none;
+    resize: none;
+}
+
+.join-destination-form select {
+    appearance: none;
+    background-image: url("../img/vector-array.svg");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+}
+
+.join-destination-form .button--primary {
+    margin-top: 1rem;
+}
