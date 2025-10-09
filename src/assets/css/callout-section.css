@@ -1,0 +1,57 @@
+.callout-section {
+    padding: 20px 0;
+}
+
+.callout-section .container {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+}
+
+.callout-section-left {
+    flex: 50%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 2fr 1fr;
+    max-height: 500px;
+    gap: 10px;
+}
+
+.callout-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.callout-section-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 50%;
+    padding: 32px;
+    gap: 4px;
+}
+
+.quote {
+    display: flex;
+}
+
+.quote img {
+    max-width: 12%;
+}
+
+.quote p {
+    font-size: clamp(2rem, 3rem, 4rem);
+    font-family: "Changa One";
+    margin: .4rem;
+    line-height: 1;
+    font-style: italic;
+}
+
+.callout-section-left .left {
+    grid-row: 1 / 3;
+}
+.callout-section-left .right-top {}
+.callout-section-left .right-bottom {}
