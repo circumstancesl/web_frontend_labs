@@ -3,7 +3,7 @@
     min-height: 52vh;
     display: flex;
     align-items: center;
-    background-image: url("/src/assets/img/hero-background-image.svg");
+    background-image: url("/lab1/src/assets/img/hero-background-image.svg");
     background-size: cover;
     background-position: center;
     border-radius: 0 0 var(--radius) var(--radius);
