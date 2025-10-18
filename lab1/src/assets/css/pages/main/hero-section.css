@@ -1,0 +1,60 @@
+.hero {
+    position: relative;
+    min-height: 52vh;
+    display: flex;
+    align-items: center;
+    background-image: url("/lab1/src/assets/img/hero-background-image.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.hero__content {
+    width: 100%;
+    padding-right: 40%;
+    position: relative;
+}
+
+.hero__title {
+    font-size: clamp(2rem, 4.2vw, 3.2rem);
+    font-family: "Changa One", cursive;
+    margin: 0 0 0.5rem;
+    line-height: 1.02;
+}
+
+.hero__title span {
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.hero__btn--watch {
+    color: var(--gray);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding-left: 1.5rem;
+}
+
+.hero__btn--watch .hero__icon-play {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #dcc4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.hero__icon-play::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 12px solid var(--accent);
+    margin-left: 4px;
+}

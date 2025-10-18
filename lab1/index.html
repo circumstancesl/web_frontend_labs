@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+      <!-- Стили -->
+      <link rel="stylesheet" href="src/assets/css/pages/header.css">
+      <link rel="stylesheet" href="src/assets/css/style.css">
+      <link rel="stylesheet" href="src/assets/css/buttons/buttons.css">
+      <link rel="stylesheet" href="src/assets/css/pages/main/hero-section.css">
+      <link rel="stylesheet" href="src/assets/css/pages/main/featured-destination-section.css">
+      <link rel="stylesheet" href="src/assets/css/pages/main/discover-the-world-section.css">
+      <link rel="stylesheet" href="src/assets/css/pages/footer.css">
+      <link rel="stylesheet" href="src/assets/css/pages/join-destination-section.css">
+      <link rel="stylesheet" href="src/assets/css/pages/main/recent-story-section.css">
+
+    <!-- Шрифты -->
+      <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <header class="site-header">
+      <div class="container site-header__inner">
+          <div class="logo">
+              <img class="logo-talking" src="src/assets/img/vector-logo-talking.svg" alt="Travel Logo">
+              <img class="logo-travel" src="src/assets/img/vector-logo-travel.svg" alt="Travel Logo">
+          </div>
+          <nav class="site-header__nav">
+              <a href="index.html" class="active" >Home</a>
+              <a href="blog.html">Story</a>
+              <a href="#">Gallery</a>
+              <a href="#">Contact Us</a>
+              <a href="#"><img src="src/assets/img/vector-search.svg" alt="Search"></a>
+              <a href="#"><img src="src/assets/img/header-profile.svg" alt="Profile"></a>
+          </nav>
+      </div>
+  </header>
+
+  <main>
+      <section class="hero">
+          <div class="hero__overlay"></div>
+          <div class="container hero__content">
+              <h1 class="hero__title">
+                  <span>Let's talk</span> about your next trip!
+              </h1>
+              <p class="hero__subtitle">
+                  Share your favorite travel destination and we will feature it in our next blog!
+              </p>
+              <div class="hero__actions">
+                  <a href="#" class="button button--primary">Share your story</a>
+                  <a href="#" class="hero__btn--watch">
+                      <span class="hero__icon-play" aria-hidden="true"></span>
+                      Watch highlights
+                  </a>
+              </div>
+          </div>
+      </section>
+
+      <section class="featured-destination container">
+          <div class="featured-destination__image-wrapper">
+              <img src="src/assets/img/featured-image.png" alt="Man.">
+          </div>
+          <div class="featured-destination__content">
+              <p class="eyebrow">FEATURED DESTINATION</p>
+              <h2>Our swiss adventure blog</h2>
+              <p class="featured-destination__description">
+                  Visiting the swiss alps? Want to know the requirements on travelling to Switzerland during the pandemic? Our blog might help!
+              </p>
+              <a href="#" class="button button--watch">
+                  <span class="button--watch__icon" aria-hidden="true"></span>
+                  Watch Now
+              </a>
+          </div>
+      </section>
+
+      <section class="discover-the-world container">
+          <header class="discover-the-world__header">
+              <p class="eyebrow">JOIN OUR ADVENTURES</p>
+              <h2 class="discover-the-world__title">Discover the world with us</h2>
+          </header>
+
+          <div class="discover-the-world__grid">
+              <div class="destination-card">
+                  <figure>
+                      <img src="src/assets/img/iceland-card-image.png" alt="Исландия">
+                      <figcaption>
+                          <span class="destination-card__title">Iceland</span>
+                          <span class="destination-card__discover">Discover</span>
+                      </figcaption>
+                  </figure>
+              </div>
+
+              <div class="destination-card">
+                  <figure>
+                      <img src="src/assets/img/italy-card-image.png" alt="Италия">
+                      <figcaption>
+                          <span class="destination-card__title">Italy</span>
+                          <span class="destination-card__discover">Discover</span>
+                      </figcaption>
+                  </figure>
+              </div>
+
+              <div class="destination-card">
+                  <figure>
+                      <img src="src/assets/img/dubai-card-image.png" alt="Дубай.">
+                      <figcaption>
+                          <span class="destination-card__title">Dubai</span>
+                          <span class="destination-card__discover">Discover</span>
+                      </figcaption>
+                  </figure>
+              </div>
+
+              <div class="destination-card">
+                  <figure>
+                      <img src="src/assets/img/patagonia-card-image.png" alt="Патагония">
+                      <figcaption>
+                          <span class="destination-card__title">Patagonia</span>
+                          <span class="destination-card__discover">Discover</span>
+                      </figcaption>
+                  </figure>
+              </div>
+          </div>
+      </section>
+
+      <section class="join-destination-section">
+          <header class="join-destination-section__header">
+              <p class="eyebrow">Let’s build a community</p>
+              <h2>Join our next destination</h2>
+          </header>
+          <form class="join-destination-form container" action="#" method="post">
+              <h3>Share your travels</h3>
+              <p>Suggest a new travel destination that you want to see and we will feature it in our blog.</p>
+              <input
+                      type="text"
+                      id="destination-name"
+                      name="destination-name"
+                      placeholder="Destination name"
+                      required
+              >
+              <select id="destination-country" name="destination-country" required>
+                  <option value="" disabled selected>Country of Destination</option>
+                  <option value="iceland">Iceland</option>
+                  <option value="italy">Italy</option>
+                  <option value="dubai">Dubai</option>
+                  <option value="patagonia">Patagonia</option>
+              </select>
+              <input
+                      type="text"
+                      id="your-name"
+                      name="your-name"
+                      placeholder="Your name"
+                      required
+              >
+              <select id="shooting-category" name="shooting-category" required>
+                  <option value="" disabled selected>Shooting category</option>
+                  <option value="landscape">Landscape</option>
+                  <option value="urban">Urban</option>
+                  <option value="portrait">Portrait</option>
+                  <option value="wildlife">Wildlife</option>
+              </select>
+              <textarea
+                      id="description"
+                      name="description"
+                      placeholder="Describe what kind of photos you want to focus on"
+              ></textarea>
+              <a href="#" class="button button--primary">Submit</a
+          </form>
+      </section>
+
+      <section class="recent-stories container">
+          <header class="recent-stories__header">
+              <p class="eyebrow">Catch up to our posts</p>
+              <h2>Recent story entries</h2>
+          </header>
+
+          <div class="recent-stories__left">
+              <div class="recent-stories__content-left">
+                  <img src="src/assets/img/big-story-image.png" alt="Big story image">
+                  <div class="recent-stories__text-icon-wrapper">
+                      <div class="recent-stories__content-text-left">
+                          <h3>Zermatt, Switzerland</h3>
+                          <p>Marvel on the beauty of the iconic Matterhorn. Find the best places to stay that has the best views of this peak...</p>
+                      </div>
+                      <span class="recent-stories__play-icon" aria-hidden="true"></span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="recent-stories__right">
+              <div class="recent-stories__content-right">
+                  <img src="src/assets/img/story-image.png" alt="image">
+                  <div class="recent-stories__content-text-right">
+                      <h3>Tuscany, Italy</h3>
+                      <p>The amazing Tuscany is home to famous Renaissance art and architecture and a vast scenic landscape.
+                          <a href="#" class="recent-stories__link">view full blog...</a>
+                      </p>
+                  </div>
+              </div>
+
+              <div class="recent-stories__content-right">
+                  <img src="src/assets/img/story-image-1.png" alt="image">
+                  <div class="recent-stories__content-text-right">
+                      <h3>Kyoto, Japan</h3>
+                      <p>Kyoto is well known for its temples, gardens, Shinto shrines and wooden houses. It’s time to visit Tokyo.
+                          <a href="#" class="recent-stories__link">view full blog...</a>
+                      </p>
+                  </div>
+              </div>
+
+              <div class="recent-stories__content-right">
+                  <img src="src/assets/img/story-image-2.png" alt="image">
+                  <div class="recent-stories__content-text-right">
+                      <h3>Lofoten Islands, Norway</h3>
+                      <p>Featuring razor-sharp peaks housing the arctic landscape. This astonishing island is perfect for your next postcard.
+                          <a href="#" class="recent-stories__link">view full blog...</a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+  </main>
+  <footer class="site-footer">
+      <div class="container site-footer__inner">
+          <p class="site-footer__copyright">© 2022, Talking Travel. All Rights Reserved.</p>
+          <nav class="site-footer__nav">
+              <a href="#" class="site-footer__link">Home</a>
+              <a href="#" class="site-footer__link">Blog</a>
+              <a href="#" class="site-footer__link">Gallery</a>
+              <a href="#" class="site-footer__link">Contact us</a>
+          </nav>
+      </div>
+  </footer>
+  </body>
+</html>

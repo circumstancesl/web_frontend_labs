@@ -1,0 +1,41 @@
+.button {
+    display: inline-block;
+    padding: 0.7rem 1.1rem;
+    text-decoration: none;
+    border-radius: 4%;
+    font-weight: 500;
+}
+
+.button--primary {
+    background: var(--accent);
+    color: white;
+    max-width: 15rem;
+    text-align: center;
+}
+
+.button--watch {
+    color: var(--accent);
+    padding-left: 0;
+    padding-right: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.button--watch__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button--watch__icon::before {
+    content: '';
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 12px solid white;
+    margin-left: 4px;
+}

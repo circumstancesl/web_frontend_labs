@@ -1,0 +1,21 @@
+.site-footer {
+    padding: 30px 0;
+    font-size: 0.75rem;
+    color: #939EB4;
+}
+.site-footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-footer__nav {
+    display: flex;
+    gap: 35px;
+}
+.site-footer__link {
+    color: #939EB4;
+    text-decoration: none;
+}
+.site-footer__copyright {
+    margin: 0;
+}

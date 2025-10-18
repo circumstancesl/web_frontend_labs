@@ -1,0 +1,32 @@
+.blog__header {
+    padding: 40px 0;
+}
+
+.blog__header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.blog__header-right {
+    display: flex;
+    margin-left: auto;
+}
+
+.blog__header-right img {
+    flex: 50%;
+    max-width: 50px;
+    max-height: 50px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.blog__header-right__text {
+    flex: 50%;
+    max-width: 200px;
+    line-height: 1;
+}
