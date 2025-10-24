@@ -41,7 +41,7 @@
 .tasks__empty span {
     display: inline-block;
     font-family: Inter, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #FFFFFF;
     position: relative;
     padding: 0.5rem 0;

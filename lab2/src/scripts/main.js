@@ -5,10 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
   const tasksEmpty = document.querySelector('.tasks__empty');
   const taskTemplate = document.getElementById('task-template');
   const tasksSection = document.querySelector('.tasks-section');
+  const alert = document.querySelector('.alert');
+  const confirmButton = document.querySelector('.button-confirm');
+  const cancelButton = document.querySelector('.button-cancel');
 
   const taskList = document.createElement('ul');
   taskList.classList.add('tasks-list');
   tasksSection.appendChild(taskList);
+  let taskToDelete = null;
 
   function createTask(title, description) {
     const taskClone = taskTemplate.content.cloneNode(true);
@@ -19,12 +23,37 @@ document.addEventListener('DOMContentLoaded', function () {
     titleElement.textContent = title || 'Task Title...';
     descriptionElement.textContent = description || 'Task body about this task...';
 
-    deleteButton.addEventListener('click', () => {
-      deleteButton.closest('.task').remove();
-      tasksEmpty.style.display = taskList.children.length === 0 ? 'block' : 'none';
+    deleteButton.addEventListener('click', function () {
+      taskToDelete = deleteButton.closest('.task');
+      alert.classList.remove('hidden');
     });
 
     return taskClone;
+  }
+
+  confirmButton.addEventListener('click', function () {
+    if (taskToDelete) {
+      taskToDelete.remove();
+      taskToDelete = null;
+      updateEmptyState();
+    }
+    alert.classList.add('hidden');
+  });
+
+  cancelButton.addEventListener('click', function () {
+    taskToDelete = null;
+    alert.classList.add('hidden');
+  });
+
+  alert.addEventListener('click', function (e) {
+    if (e.target === alert) {
+      taskToDelete = null;
+      alert.classList.add('hidden');
+    }
+  });
+
+  function updateEmptyState() {
+    tasksEmpty.style.display = taskList.children.length === 0 ? 'block' : 'none';
   }
 
   form.addEventListener('submit', (e) => {
