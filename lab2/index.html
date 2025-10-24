@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do App</title>
+    <link rel="stylesheet" href="/lab2/src/assets/css/components/tasks-section.css" />
     <link rel="stylesheet" href="/lab2/src/assets/css/components/input-section.css" />
     <link rel="stylesheet" href="/lab2/src/assets/css/style.css" />
     <link rel="stylesheet" href="/lab2/src/assets/css/buttons/buttons.css" />
@@ -17,15 +18,32 @@
                 <input class="input" type="text" name="description" placeholder="About...">
             </div>
             <button class="button-add" type="submit">
-                <img src="/lab2/src/assets/img/add.svg" alt="Plus Icon">
+                <img src="/lab2/src/assets/img/add.svg" alt="add icon">
             </button>
         </form>
     </section>
 
-    <p class="tasks__empty">
-        <span>No tasks</span>
-    </p>
-
+    <section class="tasks-section">
+        <p class="tasks__empty">
+            <span>No tasks</span>
+        </p>
+        <template id="task-template">
+            <li class="task">
+                <div class="task__content">
+                    <div class="text__area">
+                        <p class="text__title">Task Title</p>
+                        <p class="text__description">Task body about this task...</p>
+                    </div>
+                    <button class="button-delete">
+                        <img src="/lab2/src/assets/img/delete.svg" alt="delete icon">
+                    </button>
+                </div>
+            </li>
+        </template>
+    </section>
 </main>
+
+<script src="/lab2/src/scripts/main.js" defer></script>
+
 </body>
 </html>

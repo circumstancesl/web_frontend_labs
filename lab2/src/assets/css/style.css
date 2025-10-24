@@ -1,5 +1,7 @@
 :root {
     --max-w: 1100px;
+    --main-hover-color: #23221F;
+    --main-background-task-color: #A35709;
     --main-background-color: #1B1A17;
     --light-background-color: #242320;
     --mark-color: #FF8303;

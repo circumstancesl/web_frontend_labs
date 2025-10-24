@@ -1,13 +1,29 @@
 .button-add {
     display: flex;
     align-items: center;
-    background-color: #1B1A17;
+    background-color: var(--main-background-color);
     border-radius: 8px;
-    border: 2px solid #FF8303;
+    border: 2px solid var(--mark-color);
     padding: 0 1.5rem 0 1.5rem;
     cursor: pointer;
 }
 
+.button-delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--main-background-color);
+    border-radius: 5px;
+    border: 2px solid var(--main-background-task-color);
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 14px;
+    flex-shrink: 0
+}
+
+.button-delete:hover,
 .button-add:hover {
-    background-color: #23221F;
+    background-color: var(--main-hover-color);
 }

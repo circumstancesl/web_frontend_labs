@@ -4,6 +4,14 @@
     gap: 0.5rem;
 }
 
+.form-section {
+    max-width: var(--max-w);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
 .form__inputs {
     width: 100%;
     display: flex;
@@ -12,18 +20,17 @@
 }
 
 .input {
-    background-color: #242320;
-    color: #F0E3CAA3;
+    background-color: var(--light-background-color);
+    color: var(--main-text-color);
     border-radius: 4px;
     font-family: Roboto, sans-serif;
     font-size: 14px;
-    border: 1px solid #FF8303;
+    border: 1px solid var(--mark-color);
     padding: 0.5rem 0.75rem 0.3rem 0.75rem;
 }
 
 .input:hover {
     background-color: #2B2A27;
-    color: #F0E3CA;
 }
 
 .tasks__empty {
@@ -48,7 +55,7 @@
     transform: translateX(-50%);
     width: 70%;
     height: 3px;
-    background-color: #FF8303;
+    background-color: var(--mark-color);
 }
 
 .tasks__empty span::before {
