@@ -1,0 +1,22 @@
+:root {
+    --max-w: 1100px;
+    --main-background-color: #1B1A17;
+    --light-background-color: #242320;
+    --mark-color: #FF8303;
+    --main-text-color: #F0E3CA;
+}
+
+body {
+    font-family: sans-serif;
+    color: white;
+    background: var(--main-background-color);
+}
+
+.container {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

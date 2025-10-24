@@ -1,0 +1,13 @@
+.button-add {
+    display: flex;
+    align-items: center;
+    background-color: #1B1A17;
+    border-radius: 8px;
+    border: 2px solid #FF8303;
+    padding: 0 1.5rem 0 1.5rem;
+    cursor: pointer;
+}
+
+.button-add:hover {
+    background-color: #23221F;
+}
