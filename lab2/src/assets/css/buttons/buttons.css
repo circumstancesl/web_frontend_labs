@@ -41,11 +41,11 @@
     line-height: 18px;
     text-align: center;
     vertical-align: middle;
-    color: #D9D9D9;
+    color: white;
     cursor: pointer;
 }
 
 .button-confirm:hover,
 .button-cancel:hover {
-    border: 1px solid #FF8303;
+    border: 1px solid var(--mark-color);
 }

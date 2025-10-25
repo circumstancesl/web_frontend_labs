@@ -6,6 +6,9 @@
     --light-background-color: #242320;
     --mark-color: #FF8303;
     --main-text-color: #F0E3CA;
+    --dark-backgroud-color: #070707E3;
+    --main-background-hover-color: #2B2A27;
+    --main-background-task-content-color: #1F1E1B;
 }
 
 body {

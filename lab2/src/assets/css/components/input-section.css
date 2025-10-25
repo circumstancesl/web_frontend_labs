@@ -30,7 +30,7 @@
 }
 
 .input:hover {
-    background-color: #2B2A27;
+    background-color: var(--main-background-hover-color);
 }
 
 .tasks__empty {
@@ -42,7 +42,7 @@
     display: inline-block;
     font-family: Inter, sans-serif;
     font-size: 1.5rem;
-    color: #FFFFFF;
+    color: white;
     position: relative;
     padding: 0.5rem 0;
 }

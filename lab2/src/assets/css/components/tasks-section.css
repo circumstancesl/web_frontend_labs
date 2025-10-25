@@ -28,7 +28,7 @@
     align-items: center;
     gap: 0.75rem;
     padding: 0 1rem;
-    background-color: #1F1E1B;
+    background-color: var(--main-background-task-content-color);
     border-radius: 8px;
     border: 2px solid var(--main-background-task-color);
     width: 100%;

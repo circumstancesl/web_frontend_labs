@@ -3,7 +3,7 @@
     inset: 0;
     width: 100%;
     height: 100%;
-    background-color: #070707E3;
+    background-color: var(--dark-backgroud-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@
     font-size: 18px;
     line-height: 1.4;
     text-align: center;
-    color: #FFFFFF;
+    color: white;
 }
 
 .alert__buttons {
