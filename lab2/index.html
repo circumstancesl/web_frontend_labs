@@ -4,57 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do App</title>
+
+    <!-- Стили -->
     <link rel="stylesheet" href="/lab2/src/assets/css/components/tasks-section.css" />
     <link rel="stylesheet" href="/lab2/src/assets/css/components/input-section.css" />
     <link rel="stylesheet" href="/lab2/src/assets/css/style.css" />
     <link rel="stylesheet" href="/lab2/src/assets/css/buttons/buttons.css" />
     <link rel="stylesheet" href="/lab2/src/assets/css/components/alert-section.css" />
+    <link rel="stylesheet" href="/lab2/src/assets/css/components/edit-section.css" />
+    <link rel="stylesheet" href="/lab2/src/assets/css/components/share-section.css" />
 </head>
 <body>
 <main>
+    <!-- === Добавление задачи === -->
     <section class="form-section">
         <form class="form">
             <div class="form__inputs">
                 <input class="input" type="text" name="title" placeholder="Title...">
                 <input class="input" type="text" name="description" placeholder="About...">
             </div>
-            <button class="button-add" type="submit">
+            <button class="button button--add button--icon" type="submit">
                 <img src="/lab2/src/assets/img/add.svg" alt="add icon">
             </button>
         </form>
     </section>
 
+    <!-- === Список задач === -->
     <section class="tasks-section">
-        <p class="tasks__empty">
-            <span>No tasks</span>
-        </p>
+        <p class="tasks__empty"><span>No tasks</span></p>
+
         <template id="task-template">
             <li class="task">
                 <div class="task__content">
-                    <div class="text__text">
-                        <p class="text__title">Task Title</p>
-                        <p class="text__description">Task body about this task...</p>
+                    <div class="task__body">
+                        <p class="task__title">Task Title</p>
+                        <p class="task__description">Task body about this task...</p>
                     </div>
-                    <button class="button-delete">
+                    <button class="button button--delete button--icon">
                         <img src="/lab2/src/assets/img/delete.svg" alt="delete icon">
+                    </button>
+                </div>
+
+                <div class="task__tools hidden">
+                    <button class="button button--share button--icon">
+                        <img src="/lab2/src/assets/img/share.svg" alt="Share Icon">
+                    </button>
+                    <button class="button button--info">i</button>
+                    <button class="button button--edit button--icon">
+                        <img src="/lab2/src/assets/img/edit.svg" alt="Pencil Icon">
                     </button>
                 </div>
             </li>
         </template>
     </section>
 
+    <!-- === Подтверждение удаления === -->
     <section class="alert hidden">
         <div class="alert__content">
             <p class="alert__text">Delete this task?</p>
             <div class="alert__buttons">
-                <button class="button-confirm" type="submit">Yes</button>
-                <button class="button-cancel">No</button>
+                <button class="button button--confirm" type="submit">Yes</button>
+                <button class="button button--cancel">No</button>
             </div>
+        </div>
+    </section>
+
+    <!-- === Редактирование задачи === -->
+    <section class="edit-window hidden">
+        <div class="edit-window__content">
+            <div class="edit-window__inputs">
+                <input class="input" type="text" name="new-title" placeholder="Mini input...">
+                <textarea class="input" name="new-description" placeholder="Max input..."></textarea>
+            </div>
+            <div class="edit-window__buttons">
+                <button class="button button--cancel">Cancel</button>
+                <button class="button button--confirm" type="submit">Save</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- === Окно поделиться === -->
+    <section class="share-window hidden">
+        <div class="share-window__content">
+            <button class="button-sharebox">
+                <img src="src/assets/img/copy.svg" alt="Copy Icon">
+            </button>
+            <button class="button-sharebox">
+                <img src="src/assets/img/vk.svg" alt="VK Icon">
+            </button>
+            <button class="button-sharebox">
+                <img src="src/assets/img/telegram.svg" alt="Telegram Icon">
+            </button>
+            <button class="button-sharebox">
+                <img src="src/assets/img/whatsapp.svg" alt="Whatsapp Icon">
+            </button>
+            <button class="button-sharebox">
+                <img src="src/assets/img/facebook.svg" alt="Facebook Icon">
+            </button>
         </div>
     </section>
 </main>
 
 <script src="/lab2/src/scripts/main.js" defer></script>
-
 </body>
 </html>

@@ -1,51 +1,101 @@
-.button-add {
-    display: flex;
-    align-items: center;
-    background-color: var(--main-background-color);
-    border-radius: 8px;
-    border: 2px solid var(--mark-color);
-    padding: 0 1.5rem 0 1.5rem;
-    cursor: pointer;
-}
-
-.button-delete {
-    display: flex;
+/* === Базовый стиль кнопок === */
+.button {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
-    background-color: var(--main-background-color);
-    border-radius: 5px;
-    border: 2px solid var(--main-background-task-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: white;
     cursor: pointer;
-    align-self: flex-start;
-    margin-top: 14px;
-    flex-shrink: 0
+    background-color: var(--main-background-color);
+    border: none;
+    transition: background-color 0.2s, border-color 0.2s;
 }
 
-.button-delete:hover,
-.button-add:hover {
+.button:hover {
     background-color: var(--main-hover-color);
 }
 
-.button-confirm,
-.button-cancel {
-    width: 64px;
-    height: 24px;
-    background-color: var(--light-background-color);
-    border: 1px solid var(--main-background-task-color);
-    border-radius: 4px;
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 18px;
-    text-align: center;
-    vertical-align: middle;
-    color: white;
-    cursor: pointer;
+/* === Вариации кнопок === */
+
+/* — Иконка — */
+.button--icon {
+    flex-shrink: 0;
 }
 
-.button-confirm:hover,
-.button-cancel:hover {
-    border: 1px solid var(--mark-color);
+/* — Добавить — */
+.button--add {
+    border: 2px solid var(--mark-color);
+    border-radius: 8px;
+    padding: 0 1.5rem;
 }
+
+/* — Удалить — */
+.button--delete {
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--main-background-task-color);
+    border-radius: 5px;
+}
+
+/* — Подтвердить / Отмена — */
+.button--confirm,
+.button--cancel {
+    width: 64px;
+    height: 24px;
+    font-size: 10px;
+    line-height: 18px;
+    border-radius: 4px;
+    background-color: var(--light-background-color);
+    border: 1px solid var(--main-background-task-color);
+}
+
+.button--confirm:hover,
+.button--cancel:hover {
+    border-color: var(--mark-color);
+}
+
+/* — Три маленькие иконки под задачей — */
+.button--share,
+.button--info,
+.button--edit {
+    width: 36px;
+    height: 36px;
+    background-color: var(--light-background-color);
+    border: 2px solid var(--main-background-task-color);
+    border-radius: 6px;
+}
+
+.button--info {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.button--share:hover,
+.button--info:hover,
+.button--edit:hover {
+    background-color: #2B2A27;
+}
+
+/* — Кнопки для share-box — */
+.button-sharebox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #23221F;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button-sharebox:hover {
+    background-color: #2f2e2b;
+}
+
+/* Можно использовать одно правило в HTML:
+   <button class="button-sharebox button-vk">...</button>
+   <button class="button-sharebox button-telegram">...</button> и т.д.
+*/
